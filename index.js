@@ -1,9 +1,9 @@
 const {Server} = require('socket.io')
-//dd
+
 const http = require('http');
-//
+
 const serverHttp = http.createServer();
-//
+
 const io = new Server(serverHttp, {cors: {origin: ['http://localhost', 'http://localhost:4200']}});
 
 io.on('connection',(socket) => {
